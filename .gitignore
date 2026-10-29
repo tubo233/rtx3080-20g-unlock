@@ -1,0 +1,38 @@
+# --- NVIDIA firmware assets: never commit, never redistribute ----------------
+*.bin
+inputs/
+usbroot*/
+usbroot-*/
+assets/
+
+# --- build output ------------------------------------------------------------
+*.EFI
+*.obj
+*.map
+build/
+
+# --- runtime logs and captured evidence --------------------------------------
+*.log
+loader.log
+DIAG*.TXT
+IMG*.BIN
+HANDOFF*.TXT
+HLS*.TXT
+START*.TXT
+TARGET.TXT
+evidence/
+
+# --- proof-of-run screenshots / dumps ----------------------------------------
+*.png
+*.bmp
+
+# --- local machine configuration (partition GUIDs, hashes) -------------------
+platform-config.h
+local-config.json
+*registration*.json
+backup/
+
+# --- python ------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
